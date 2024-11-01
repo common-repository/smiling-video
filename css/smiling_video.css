@@ -1,0 +1,222 @@
+#smiling_video_modal.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#smiling_video_modal .modal-content-wrapper {
+    background-color: #fefefe;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    margin: 5% auto 0 auto;
+    position:relative;
+}
+
+#smiling_video_modal .modal-content {
+    width: 100%; 
+    height: 100%;
+    margin:auto;
+    
+}
+#smiling_video_modal.modal.smiling_loaded .modal-content-wrapper{
+    height: 70%;
+    padding-top: 40px;
+    padding-right: 15px;
+}
+#smiling_video_modal.modal.smiling_loaded .modal-content{
+    overflow-y: scroll;
+}
+/* The Close Button */
+#smiling_video_modal .smiling_video_modal_close {
+    color: #aaa;
+    /* float: right; */
+    font-size: 28px;
+    right: 15px;
+    position: absolute;
+    font-weight: bold;
+    z-index: 99;
+    top: 10px;
+}
+
+#smiling_video_modal .smiling_video_modal_close:hover,
+#smiling_video_modal .smiling_video_modal_close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#smiling_video_modal .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:0px;
+}
+
+#smiling_video_modal .container:before,
+#smiling_video_modal .container:after {
+  display: table;
+  content: " ";
+}
+
+#smiling_video_modal .container:after {
+  clear: both;
+}
+
+#smiling_video_modal .container:before,
+#smiling_video_modal .container:after {
+  display: table;
+  content: " ";
+}
+
+#smiling_video_modal .container:after {
+  clear: both;
+}
+#smiling_video_modal .row{
+    margin-left:-15px;
+    margin-right:-15px;
+}
+    
+#smiling_video_modal .row:before,
+#smiling_video_modal .row:after {
+  display: table;
+  content: " ";
+}
+
+#smiling_video_modal .row:after {
+  clear: both;
+}
+
+#smiling_video_modal .row:before,
+#smiling_video_modal .row:after {
+  display: table;
+  content: " ";
+}
+
+#smiling_video_modal .row:after {
+  clear: both;
+}
+#smiling_video_modal .single-box {
+    position: relative;
+    height: 350px;
+    width:25%;
+    float:left;
+    padding: 0;
+}
+#smiling_video_modal .single-box img{
+    max-width:100%;
+    width:100%;
+}
+#smiling_video_modal .single-box .video-box{
+    position:relative;
+    text-align:center;
+    height:50%;
+    background-color:black;
+}
+#smiling_video_modal .single-box .overlay-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: .5;
+}
+#smiling_video_modal .single-box .play {
+    top: 40%;
+    left: 0;
+    color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+#smiling_video_modal .single-box .play span{ font-size: 32px;}
+#smiling_video_modal .single-box video{
+    position:relative;
+    max-width:100%;
+    width:100%;
+    height:100%;
+    
+}
+#smiling_video_modal .single-box .force-auto-dimension{
+    width: auto!important;
+    height: 100%!important;
+}
+#smiling_video_modal .single-box .content{
+   padding:0 15px;
+   height:100%;
+}
+#smiling_video_modal .single-box textarea{
+   width:100%;
+   min-height:90px;
+}
+#smiling_video_modal .single-box .smiling_video_data{
+    font-style: italic;
+    margin-left: 5px;
+}
+#smiling_video_modal .single-box .smiling_video_title{
+    margin-top:5px;
+    min-height: 38px;
+}
+@media only screen and (max-width : 1450px) {
+    #smiling_video_modal .single-box .smiling_video_title{
+        font-size: 1.2em;
+    }
+}
+#logo_smiling_video{
+    max-width: 100%;
+}
+#logo_smiling_video:hover{
+    cursor: pointer;
+}
+    /*
+    .single-box .v-hidden{
+        visibility: hidden;
+    }*/
+
+.padding015{
+    padding:0 15px;
+}
+.padding010{
+    padding:0 10px;
+}
+.padding10r{
+    padding-right:10px;
+}
+.margin010{
+    margin:0 10px!important;
+}
+.search_box label{
+    font-weight: bold;
+    display: block;
+}
+.fleft{
+    float:left;
+}
+
+@media only screen and (max-width : 1599px) {
+    #smiling_video_modal .single-box {
+        position: relative;
+        height: 300px;
+    }
+    #smiling_video_modal .single-box .video-box{
+        height:50%;
+    }
+}
+@media only screen and (max-width : 1199px) {
+    #smiling_video_modal .single-box {
+        position: relative;
+        height: 300px;
+    }
+    #smiling_video_modal .single-box .video-box{
+        height:35%;
+    }
+}
